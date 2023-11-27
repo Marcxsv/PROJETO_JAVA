@@ -5,4 +5,10 @@ class ProdutoPerecivel extends Produto {
         super(nome, preco, tipo, peso, codigoBarras, codigoIdentificacao, marca);
         this.dataValidade = dataValidade;
     }
+
+    @Override
+    public String toString() {
+
+        return super.toString() + "\nData de Validade: " + dataValidade;
+    }
 }
